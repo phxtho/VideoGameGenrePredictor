@@ -1,6 +1,11 @@
 <!doctype html>
 <html>
-  <head></head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <title>Genre Predict</title>
+  </head>
   <style>
     body {
       font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -11,8 +16,13 @@
 
   <body>
     <h1>Genre Predictor</h1>
-    <input id="game_name"></input>
-    <div id="result"></div>
+    <div>
+        <input id="game_name"></input>
+        <button id="btn_predict">Predict</button>
+    </div>
+    <div>
+      <p id="result"></p>
+    </div>
   </body>
 
   <script src="index.js"></script>
